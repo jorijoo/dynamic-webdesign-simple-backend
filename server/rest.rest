@@ -1,4 +1,4 @@
-//  JSON AND MYSQL BACKEND
+//  NODE.JS AND MYSQL BACKEND
 //  OAMK assignment
 //
 //  Copyright Jori Hiltunen 2023
