@@ -1,3 +1,8 @@
+//  JSON AND MYSQL BACKEND
+//  OAMK assignment
+//
+//  Copyright Jori Hiltunen 2023
+
 const express = require('express')
 const cors = require('cors')
 const mysql = require('mysql2/promise')

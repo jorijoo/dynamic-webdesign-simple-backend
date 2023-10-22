@@ -1,2 +1,7 @@
+//  JSON AND MYSQL BACKEND
+//  OAMK assignment
+//
+//  Copyright Jori Hiltunen 2023
+
 ### Test GET
 GET http://localhost:3001 HTTP/1.1

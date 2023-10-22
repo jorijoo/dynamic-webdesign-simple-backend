@@ -1,3 +1,8 @@
+//  JSON AND MYSQL BACKEND
+//  OAMK assignment
+//
+//  Copyright Jori Hiltunen 2023
+
 import './App.css';
 import axios from 'axios';
 import { useState } from 'react';
