@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
+const URL = 'http://localhost:3001'
 
 function App() {
+    const [databaseItems, setDatabaseItems] = useState('Fetching data from database, please wait...')
+
+    useEffect(() => {
+        axios.get(URL)
+        .then(res => {
+            setDatabaseItems(JSON.stringify(res.data))
+        })
+        .catch(err => {
+            setDatabaseItems(JSON.stringify(err))
+        })
+    })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {databaseItems}
     </div>
   );
 }
